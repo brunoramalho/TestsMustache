@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title><?php echo $dados['nome']." ".$dados['sobrenome'] ?></title>
+			<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<h1>Hello {{name}}</h1>
+		<p>You have just won ${{value}}!</p>
+		<ul>
+			{{#in_ca}}
+			<li>Well, ${{taxed_value}}, after taxes.</li>
+			{{/in_ca}}
+		</ul>		
+	</body>
+</html>
